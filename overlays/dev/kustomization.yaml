@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: development
+resources:
+  - ../../apps/course-app/base
+  - namespace.yaml
+  - dragonfly.yaml
+patches:
+  - path: replicas-patch.yaml
