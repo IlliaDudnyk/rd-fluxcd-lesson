@@ -5,6 +5,9 @@ metadata:
   namespace: development
 spec:
   replicas: 1
+  args:
+    - "--maxmemory=1Gi"
+    - "--proactor_threads=1"
 resources:
   requests:
     memory: "512Mi"
