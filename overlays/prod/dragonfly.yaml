@@ -8,10 +8,3 @@ spec:
   args:
     - "--maxmemory=1Gi"
     - "--proactor_threads=1"
-resources:
-  requests:
-    memory: "512Mi"
-    cpu: "250m"
-  limits:
-    memory: "1Gi"
-    cpu: "500m"
